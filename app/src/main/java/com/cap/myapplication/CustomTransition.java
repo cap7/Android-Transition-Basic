@@ -30,5 +30,8 @@ public class CustomTransition extends Transition {
         captureValues(transitionValues);
     }
 
-
+    @Override
+    public Animator createAnimator(ViewGroup sceneRoot, TransitionValues startValues, TransitionValues endValues) {
+        return super.createAnimator(sceneRoot, startValues, endValues);
+    }
 }
